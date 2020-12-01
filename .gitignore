@@ -34,3 +34,5 @@ build/
 
 Docker/data
 Docker/db
+
+.mvn
