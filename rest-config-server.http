@@ -1,0 +1,17 @@
+###
+GET http://localhost:8081/appA/test/master
+
+###
+GET http://localhost:8081/appA/master
+
+###
+GET http://localhost:8081/appA-prod.properties
+
+###
+GET http://localhost:8081/appA/test
+X-Config-Token: myroot
+
+###
+GET http://localhost:8081/appA/prod
+X-Config-Token: myroot
+

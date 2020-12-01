@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      server:
+        vault:
+          kv-version: 2
+          profile-separator: /
+          host: localhost
+          port: 8200
+          scheme: http
+          token: myroot # this static token can be used for the Health Indicator to not fail
+          # https://github.com/spring-cloud/spring-cloud-config/issues/610
+          # https://github.com/spring-cloud/spring-cloud-config/issues/565
+          authentication: token
+    main: # also needed for health check working
+      allow-bean-definition-overriding: true
+
